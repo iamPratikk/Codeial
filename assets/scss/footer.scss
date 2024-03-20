@@ -1,0 +1,17 @@
+#footer_parent{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(71, 66, 66);
+    color: white;
+    #footer_links{
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100px;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

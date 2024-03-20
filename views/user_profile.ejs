@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/css/user_profile.css">
+<% if(profile_user.id== locals.user.id){ %>
+<img src="<%= user.avatar%>" alt="<%=user.name%>" width="200">
+<% } %>
+<h2><%= profile_user.name %></h2>
+<h2><%= profile_user.email %></h2>
+<% if(profile_user.id== locals.user.id){ %>
+    <h4>Update your name/email here</h4>
+    <form action="/users/update/<%= profile_user.id%>" enctype="multipart/form-data" method="POST">
+        <input type="text" name="name" value="<%= profile_user.name%>" required>
+        <input type="email" name="email" value="<%= profile_user.email%>" required>
+        <input type="file" name="avatar" placeholder="Profile Picture">
+        <input type="submit" value="update">
+    </form>
+<% } %>

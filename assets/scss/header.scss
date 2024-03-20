@@ -1,0 +1,29 @@
+#header-parent{
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    color: white;
+    h1{
+        margin: 10 10 10 10;
+    }
+    
+}
+#sign_up_links{
+    width: 170px;
+    margin-right: 20px;
+   ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    li{
+       a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+            color: gray;
+        }
+       }
+       
+    }
+   }
+}
